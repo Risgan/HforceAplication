@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MenuPrincipal\MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal\MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Splash\Splash.cs">
@@ -54,6 +60,9 @@
     <Compile Include="Splash\Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MenuPrincipal\MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +71,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Splash\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
@@ -78,6 +88,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
