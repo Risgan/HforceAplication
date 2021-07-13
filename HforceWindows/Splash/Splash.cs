@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HforceWindows
+namespace HforceWindows.Splash
 {
-    public partial class Form1 : Form
+    public partial class Splash : Form
     {
-        public Form1()
+        public Splash()
         {
             InitializeComponent();
         }
