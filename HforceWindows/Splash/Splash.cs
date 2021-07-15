@@ -32,8 +32,8 @@ namespace HforceWindows.Splash
             {                
                 this.Hide();
                 timer1.Stop();
-                Login.Login login = new Login.Login();
-                login.Show();                
+                Menus.Bitacora.Bitacora formulario = new Menus.Bitacora.Bitacora();
+                formulario.Show();                
             }
         }
     }

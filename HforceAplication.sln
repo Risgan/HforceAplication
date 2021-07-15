@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HforceWindows", "HforceWind
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HforceNegocio", "HforceNegocio\HforceNegocio.csproj", "{B7950BFE-B53C-4E43-9482-5FB5CFF1A8F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HforceMovil.Android", "HforceMovil\HforceMovil.Android\HforceMovil.Android.csproj", "{1D8149B4-50AD-4CAE-A1A7-14692B60FAE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HforceMovil", "HforceMovil\HforceMovil\HforceMovil.csproj", "{AECFB6EE-5BD1-4FC7-BFD0-0C99BE092167}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,16 @@ Global
 		{B7950BFE-B53C-4E43-9482-5FB5CFF1A8F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7950BFE-B53C-4E43-9482-5FB5CFF1A8F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7950BFE-B53C-4E43-9482-5FB5CFF1A8F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D8149B4-50AD-4CAE-A1A7-14692B60FAE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D8149B4-50AD-4CAE-A1A7-14692B60FAE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D8149B4-50AD-4CAE-A1A7-14692B60FAE5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1D8149B4-50AD-4CAE-A1A7-14692B60FAE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D8149B4-50AD-4CAE-A1A7-14692B60FAE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D8149B4-50AD-4CAE-A1A7-14692B60FAE5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AECFB6EE-5BD1-4FC7-BFD0-0C99BE092167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECFB6EE-5BD1-4FC7-BFD0-0C99BE092167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECFB6EE-5BD1-4FC7-BFD0-0C99BE092167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECFB6EE-5BD1-4FC7-BFD0-0C99BE092167}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
