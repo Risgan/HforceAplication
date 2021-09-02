@@ -32,23 +32,23 @@ namespace HforceWindows.MenuPrincipal
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMcerrar = new System.Windows.Forms.ToolStripMenuItem();
             this.remisiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salidasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuevoRemision = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMeditarRemision = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMconsultarRemision = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.TSMToolStripRemision = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMcerrar = new System.Windows.Forms.ToolStripMenuItem();
+            this.salidasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMdespachoEnviosSalidas = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.contactoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -88,6 +88,13 @@ namespace HforceWindows.MenuPrincipal
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.archivoToolStripMenuItem.Text = "&Archivo";
             // 
+            // TSMcerrar
+            // 
+            this.TSMcerrar.Name = "TSMcerrar";
+            this.TSMcerrar.Size = new System.Drawing.Size(132, 26);
+            this.TSMcerrar.Text = "Cerrar";
+            this.TSMcerrar.Click += new System.EventHandler(this.TSMcerrar_Click);
+            // 
             // remisiónToolStripMenuItem
             // 
             this.remisiónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -100,6 +107,36 @@ namespace HforceWindows.MenuPrincipal
             this.remisiónToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.remisiónToolStripMenuItem.Text = "&Remisión";
             // 
+            // TSMnuevoRemision
+            // 
+            this.TSMnuevoRemision.Name = "TSMnuevoRemision";
+            this.TSMnuevoRemision.Size = new System.Drawing.Size(154, 26);
+            this.TSMnuevoRemision.Text = "&Nuevo";
+            this.TSMnuevoRemision.Click += new System.EventHandler(this.TSMnuevoRemision_Click);
+            // 
+            // TSMeditarRemision
+            // 
+            this.TSMeditarRemision.Name = "TSMeditarRemision";
+            this.TSMeditarRemision.Size = new System.Drawing.Size(154, 26);
+            this.TSMeditarRemision.Text = "&Editar";
+            // 
+            // TSMconsultarRemision
+            // 
+            this.TSMconsultarRemision.Name = "TSMconsultarRemision";
+            this.TSMconsultarRemision.Size = new System.Drawing.Size(154, 26);
+            this.TSMconsultarRemision.Text = "&Consultar";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(151, 6);
+            // 
+            // TSMToolStripRemision
+            // 
+            this.TSMToolStripRemision.Name = "TSMToolStripRemision";
+            this.TSMToolStripRemision.Size = new System.Drawing.Size(154, 26);
+            this.TSMToolStripRemision.Text = "&Relación";
+            // 
             // salidasToolStripMenuItem
             // 
             this.salidasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -108,53 +145,17 @@ namespace HforceWindows.MenuPrincipal
             this.salidasToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.salidasToolStripMenuItem.Text = "&Salidas";
             // 
+            // TSMdespachoEnviosSalidas
+            // 
+            this.TSMdespachoEnviosSalidas.Name = "TSMdespachoEnviosSalidas";
+            this.TSMdespachoEnviosSalidas.Size = new System.Drawing.Size(204, 26);
+            this.TSMdespachoEnviosSalidas.Text = "&Despacho envios";
+            // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.ayudaToolStripMenuItem.Text = "Ay&uda";
-            // 
-            // TSMnuevoRemision
-            // 
-            this.TSMnuevoRemision.Name = "TSMnuevoRemision";
-            this.TSMnuevoRemision.Size = new System.Drawing.Size(224, 26);
-            this.TSMnuevoRemision.Text = "&Nuevo";
-            // 
-            // TSMeditarRemision
-            // 
-            this.TSMeditarRemision.Name = "TSMeditarRemision";
-            this.TSMeditarRemision.Size = new System.Drawing.Size(224, 26);
-            this.TSMeditarRemision.Text = "&Editar";
-            // 
-            // TSMconsultarRemision
-            // 
-            this.TSMconsultarRemision.Name = "TSMconsultarRemision";
-            this.TSMconsultarRemision.Size = new System.Drawing.Size(224, 26);
-            this.TSMconsultarRemision.Text = "&Consultar";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
-            // 
-            // TSMToolStripRemision
-            // 
-            this.TSMToolStripRemision.Name = "TSMToolStripRemision";
-            this.TSMToolStripRemision.Size = new System.Drawing.Size(224, 26);
-            this.TSMToolStripRemision.Text = "&Relación";
-            // 
-            // TSMcerrar
-            // 
-            this.TSMcerrar.Name = "TSMcerrar";
-            this.TSMcerrar.Size = new System.Drawing.Size(224, 26);
-            this.TSMcerrar.Text = "Cerrar";
-            this.TSMcerrar.Click += new System.EventHandler(this.TSMcerrar_Click);
-            // 
-            // TSMdespachoEnviosSalidas
-            // 
-            this.TSMdespachoEnviosSalidas.Name = "TSMdespachoEnviosSalidas";
-            this.TSMdespachoEnviosSalidas.Size = new System.Drawing.Size(224, 26);
-            this.TSMdespachoEnviosSalidas.Text = "&Despacho envios";
             // 
             // clientesToolStripMenuItem
             // 
@@ -173,43 +174,43 @@ namespace HforceWindows.MenuPrincipal
             this.toolStripSeparator2,
             this.contactoToolStripMenuItem});
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.nuevoToolStripMenuItem.Text = "&Nuevo";
-            // 
-            // editarToolStripMenuItem
-            // 
-            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.editarToolStripMenuItem.Text = "&Editar";
-            // 
-            // consultarToolStripMenuItem
-            // 
-            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.consultarToolStripMenuItem.Text = "&Consultar";
             // 
             // empresaToolStripMenuItem
             // 
             this.empresaToolStripMenuItem.Name = "empresaToolStripMenuItem";
-            this.empresaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.empresaToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.empresaToolStripMenuItem.Text = "&Empresa";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
             // contactoToolStripMenuItem
             // 
             this.contactoToolStripMenuItem.Name = "contactoToolStripMenuItem";
-            this.contactoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.contactoToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.contactoToolStripMenuItem.Text = "&Contacto";
+            // 
+            // editarToolStripMenuItem
+            // 
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.editarToolStripMenuItem.Text = "&Editar";
+            // 
+            // consultarToolStripMenuItem
+            // 
+            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.consultarToolStripMenuItem.Text = "&Consultar";
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            this.tabControl1.HotTrack = true;
             this.tabControl1.Location = new System.Drawing.Point(32, 85);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -223,7 +224,7 @@ namespace HforceWindows.MenuPrincipal
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(644, 371);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "tabPagasdfasdfasdfasdfasdfe1asdfasdfasdfasdfasdf";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
@@ -231,7 +232,7 @@ namespace HforceWindows.MenuPrincipal
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 71);
+            this.tabPage2.Size = new System.Drawing.Size(644, 371);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -250,6 +251,7 @@ namespace HforceWindows.MenuPrincipal
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuPrincipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuPrincipal_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);

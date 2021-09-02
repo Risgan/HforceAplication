@@ -32,7 +32,7 @@ namespace HforceWindows.Splash
             {                
                 this.Hide();
                 timer1.Stop();
-                Menus.Bitacora.Bitacora formulario = new Menus.Bitacora.Bitacora();
+                MenuPrincipal.MenuPrincipal formulario = new MenuPrincipal.MenuPrincipal();
                 formulario.Show();                
             }
         }

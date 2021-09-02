@@ -89,11 +89,5 @@
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\HforceMovil\HforceMovil.csproj">
-      <Project>{B661E60E-4CEB-40E4-808C-73E02D0BA560}</Project>
-      <Name>HforceMovil</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

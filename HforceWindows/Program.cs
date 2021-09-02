@@ -16,7 +16,10 @@ namespace HforceWindows
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Splash.Splash());
+            //Application.Run(new Splash.Splash());
+            //Application.Run(new Menus.Remision.RemisionNuevo());
+            Application.Run(new Menus.Clientes.ClienteNuevo());
+            //Application.Run(new pruebas());
         }
     }
 }

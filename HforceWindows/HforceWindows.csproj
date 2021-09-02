@@ -58,8 +58,26 @@
     <Compile Include="Menus\Bitacora\Bitacora.Designer.cs">
       <DependentUpon>Bitacora.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menus\Clientes\ClienteNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\Clientes\ClienteNuevo.Designer.cs">
+      <DependentUpon>ClienteNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\Remision\RemisionNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\Remision\RemisionNuevo.Designer.cs">
+      <DependentUpon>RemisionNuevo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pruebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pruebas.Designer.cs">
+      <DependentUpon>pruebas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Splash\Splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +90,12 @@
     <EmbeddedResource Include="Menus\Bitacora\Bitacora.resx">
       <DependentUpon>Bitacora.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Clientes\ClienteNuevo.resx">
+      <DependentUpon>ClienteNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Remision\RemisionNuevo.resx">
+      <DependentUpon>RemisionNuevo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -82,6 +106,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="pruebas.resx">
+      <DependentUpon>pruebas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Splash\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +136,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonGuardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonEliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonCerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonAñadir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HforceNegocio\HforceNegocio.csproj">
+      <Project>{b7950bfe-b53c-4e43-9482-5fb5cff1a8f5}</Project>
+      <Name>HforceNegocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

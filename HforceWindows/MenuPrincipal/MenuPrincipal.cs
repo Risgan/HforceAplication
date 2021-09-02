@@ -19,11 +19,21 @@ namespace HforceWindows.MenuPrincipal
         } 
         #endregion
 
-        #region Cerrar
+        #region Cerrar Aplicacion
         private void TSMcerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        } 
+        }
+       
+        private void MenuPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
         #endregion
+
+        private void TSMnuevoRemision_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
